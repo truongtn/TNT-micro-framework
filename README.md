@@ -11,7 +11,32 @@ Tạo một file là hello.html trong thư mục templates<br />
 <br />
 2. Tạo model<br />
 Các ORM nằm trong file models.php, bản 1.1 sẽ có code gerenator giờ bận quá chưa làm được<br />
-
+Kết nối<br />
+$db = new db("mysql:host=127.0.0.1;port=8889;dbname=mydb", "dbuser", "dbpasswd");<br />
+Xóa<br />
+$db->delete("mytable", "Age < 30");<br />
+Insert<br />
+$insert = array(<br />
+    "FName" => "John",<br />
+    "LName" => "Doe",<br />
+    "Age" => 26,<br />
+    "Gender" => "male"<br />
+);<br />
+$db->insert("mytable", $insert);<br />
+Select<br />
+$results = $db->select("mytable", "Gender = 'male'");<br />
+Update<br />
+$update = array(<br />
+    "Age" => 24<br />
+);<br />
+$fname = "Jane";<br />
+$lname = "Doe";<br />
+$bind = array(<br />
+    ":fname" => $fname,<br />
+    ":lname" => $lname<br />
+);<br />
+$db->update("mytable", $update, "FName = :fname AND LName = :lname", $bind);<br />
+<br />
 SQL tự bảo vệ lấy<br />
 <br />
 3. Code template<br />
