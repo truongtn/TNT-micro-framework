@@ -4,6 +4,7 @@ require_once 'lib/render.php';
 require_once 'lib/redirect.php';
 require_once 'lib/validation.php';
 require_once 'lib/privilege.php';
+require_once 'lib/db.php';
 require_once 'lib/random.php';
 
 require_once 'views.php';
