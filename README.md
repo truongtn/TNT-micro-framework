@@ -1,11 +1,11 @@
-# TNT-micro-framework
+# TNT-micro-framework__
 Thời gian có hạn chỉ nhanh <3 mà cái này là micro framework nên code rất nhanh mà không cồng kềnh, hướng dẫn cũng nhanh thôi
-Cookbook tạo web hello world
-1. Tạo mới một controller
-Tạo một controller mới, vào view thêm
-function helloController(){
-    return render('hello.html');
-}
+Cookbook tạo web hello world__
+1. Tạo mới một controller__
+Tạo một controller mới, vào view thêm__
+function helloController(){__
+    return render('hello.html');__
+}__
 Tạo một file là hello.html trong thư mục templates
 
 2. Tạo model
