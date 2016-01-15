@@ -8,6 +8,7 @@ function helloController(){<br />
     return render('hello.html');<br />
 }<br />
 Tạo một file là hello.html trong thư mục templates<br />
+Thử kiểm tra truy cập vào ?page=hello <br />
 <br />
 2. Tạo model<br />
 Các ORM nằm trong file models.php, bản 1.1 sẽ có code gerenator giờ bận quá chưa làm được<br />
