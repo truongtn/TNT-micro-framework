@@ -69,7 +69,7 @@ thì người đó được quyền truy cập chức năng đó<br />
 5. Captcha <br />
  Gọi hàm captcha rồi gán vào $_SESSION['captcha'] <br />
 function helloController(){<br />
-    $_SESSION['captcha'] = captcha();
+    $_SESSION['captcha'] = captcha();<br />
     $var = 'Hello world';<br />
     $var2 = 'Hello world2';<br />
     $var3 = 'Hello world3';<br />
@@ -80,7 +80,7 @@ Trong template gọi arg <br />
 Thêm vào trước controller
 function helloController(){<br />
     include_once '/lib/csrf-magic/csrf-magic.php';<br />
-    $_SESSION['captcha'] = captcha();
+    $_SESSION['captcha'] = captcha();<br />
     $var = 'Hello world';<br />
     $var2 = 'Hello world2';<br />
     $var3 = 'Hello world3';<br />
