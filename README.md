@@ -64,7 +64,7 @@ function helloController(){<br />
     $var = 'Hello world';<br />
     return render('hello.html',$var);<br />
 }<br />
-quyền hạn của người dùng sẽ được lưu trong biến $\_SESSION['role'], nếu $_SESSION['role'] >= require_access<br /> 
+quyền hạn của người dùng PHẢI được lưu trong biến $\_SESSION['role'], nếu $\_SESSION['role'] >= require_access<br /> 
 thì người đó được quyền truy cập chức năng đó<br />
 <br />
 5. Captcha <br />
