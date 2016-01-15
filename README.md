@@ -77,7 +77,7 @@ function helloController(){<br />
 Trong template gọi arg <br />
 <br />
 6. Chống CSRF<br />
-Thêm vào trước controller
+Thêm vào trước controller include_once '/lib/csrf-magic/csrf-magic.php';<br />
 function helloController(){<br />
     include_once '/lib/csrf-magic/csrf-magic.php';<br />
     $_SESSION['captcha'] = captcha();<br />
