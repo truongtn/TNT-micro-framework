@@ -39,7 +39,7 @@ $db->update("mytable", $update, "FName = :fname AND LName = :lname", $bind);<br 
 <br />
 SQL tự bảo vệ lấy<br />
 <br />
-3. Code template<br />
+3. Code template và chèn biến từ controller<br />
 trong file hello.html thêm <?php echo $arg[1]; ?><br />
 trong controller thêm như sau<br />
 function helloController(){<br />
