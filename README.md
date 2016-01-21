@@ -1,5 +1,5 @@
 # TNT-micro-framework-1.0<br />
-Thời gian có hạn hướng dẫn nhanh <3 mà cái này là micro framework nên code rất nhanh, bảo mật mà không cồng kềnh, sau có thời gian sẽ làm cẩn thận hơn
+
 Cookbook tạo web hello world<br />
 <br />
 1. Tạo mới một controller<br />
