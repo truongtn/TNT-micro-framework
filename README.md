@@ -81,6 +81,6 @@ $var = 'Hello world';
 $var2 = 'Hello world2';  
 $var3 = 'Hello world3';  
 return render('hello.html',$var,$var2,$var3,$_SESSION['captcha']);  
-In template: <img src="' . $arg[4]['image_src'] . '" alt="CAPTCHA" />
+In template: &lt;img src="' . $arg[4]['image_src'] . '" alt="CAPTCHA" /&gt;
 
 7. Mail
