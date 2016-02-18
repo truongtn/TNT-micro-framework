@@ -11,7 +11,6 @@ Create file **hello.htm**l in folder templates
 Check: go to /?page=hello  
   
 2. Model
-
 All the ORMs must be in file **models.php**  
 Connection  
 $db = new db("mysql:host=127.0.0.1;port=8889;dbname=mydb", "dbuser", "dbpasswd");  
