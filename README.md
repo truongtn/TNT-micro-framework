@@ -37,8 +37,17 @@ $bind = array(
 ":lname" =&gt; $lname  
 );  
 $db-&gt;update("mytable", $update, "FName = :fname AND LName = :lname", $bind);  
-  
-3. Template handle  
+
+3. CSRF protection  
+function helloController(){  
+include_once '/lib/csrf-magic/csrf-magic.php';  
+$_SESSION['captcha'] = captcha();  
+$var = 'Hello world';  
+$var2 = 'Hello world2';  
+$var3 = 'Hello world3';  
+return render('hello.html',$var,$var2,$var3,$_SESSION['captcha']); 
+
+4. Template handle  
 In **hello.html**, add a line &lt;?php echo $arg[1]; ?&gt;  
 In hello controller:  
 function helloController(){  
@@ -55,7 +64,7 @@ return render('hello.html',$var,$var2,$var3);
 }  
 in template &lt;?php echo $arg[1].$arg[2].$arg[3]; ?&gt;  
   
-4. Privilege  
+5. Privilege  
 In the front of each controller, we add a function called require_access():  
 function helloController(){  
 require_access(1)  
@@ -65,21 +74,13 @@ return render('hello.html',$var);
 The user privilege in $_SESSION['role'] variable, if $_SESSION['role'] &gt;= require_access  
 user have right to access this controller  
   
-5. Captcha   
+6. Captcha   
 function helloController(){  
 $_SESSION['captcha'] = captcha();  
 $var = 'Hello world';  
 $var2 = 'Hello world2';  
 $var3 = 'Hello world3';  
 return render('hello.html',$var,$var2,$var3,$_SESSION['captcha']);  
-  
-6. CSRF protection  
-function helloController(){  
-include_once '/lib/csrf-magic/csrf-magic.php';  
-$_SESSION['captcha'] = captcha();  
-$var = 'Hello world';  
-$var2 = 'Hello world2';  
-$var3 = 'Hello world3';  
-return render('hello.html',$var,$var2,$var3,$_SESSION['captcha']);  
-  
+In template: <img src="' . $arg[4]['image_src'] . '" alt="CAPTCHA" />
+
 7. Mail
