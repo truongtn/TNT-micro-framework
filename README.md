@@ -84,5 +84,6 @@ return render('hello.html',$var,$var2,$var3,$_SESSION['captcha']);
 In template: &lt;img src="' . $arg[4]['image_src'] . '" alt="CAPTCHA" /&gt;
 
 7. Mail  
-$mail = new Mail;
+$mail = new Mail; 
+
 $result =$mail-&gt;simple_send($FromEmail,$FromName,$ToAdress,$Subject,$Body,$Attachment='',$wordwrap=5
