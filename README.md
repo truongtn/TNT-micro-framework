@@ -8,7 +8,6 @@ function helloController(){
 return render('hello.html');  
 }  
 Create file **hello.htm**l in folder templates
-
 Check: go to /?page=hello  
   
 2. Model
