@@ -74,7 +74,7 @@ return render('hello.html',$var);
 The user privilege in $_SESSION['role'] variable, if $_SESSION['role'] &gt;= require_access  
 user have right to access this controller  
   
-6. Captcha   
+6. Captcha  
 function helloController(){  
 $_SESSION['captcha'] = captcha();  
 $var = 'Hello world';  
@@ -83,6 +83,6 @@ $var3 = 'Hello world3';
 return render('hello.html',$var,$var2,$var3,$_SESSION['captcha']);  
 In template: &lt;img src="' . $arg[4]['image_src'] . '" alt="CAPTCHA" /&gt;
 
-7. Mail
+7. Mail 
 $mail = new Mail;
 $result =$mail-&gt;simple_send($FromEmail,$FromName,$ToAdress,$Subject,$Body,$Attachment='',$wordwrap=50,$cc='');
