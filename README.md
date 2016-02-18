@@ -55,7 +55,7 @@ return render('hello.html',$var,$var2,$var3);
 }  
 in template &lt;?php echo $arg[1].$arg[2].$arg[3]; ?&gt;  
   
-4.Privilege  
+4. Privilege  
 In the front of each controller, we add a function called require_access():  
 function helloController(){  
 require_access(1)  
