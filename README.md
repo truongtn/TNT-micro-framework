@@ -15,6 +15,7 @@ Check: go to /?page=hello
 All the ORMs must be in file **models.php**  
 Connection  
 $db = new db("mysql:host=127.0.0.1;port=8889;dbname=mydb", "dbuser", "dbpasswd");  
+Use DBNAME,DBHOST,DBUSER,DBPASS, they definded in config.php  
 Delete  
 $db-&gt;delete("mytable", "Age &lt; 30");  
 Insert  
