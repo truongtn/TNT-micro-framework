@@ -43,11 +43,7 @@ $db-&gt;update("mytable", $update, "FName = :fname AND LName = :lname", $bind);
 3. CSRF protection  
 function helloController(){  
 include_once '/lib/csrf-magic/csrf-magic.php';  
-$_SESSION['captcha'] = captcha();  
-$var = 'Hello world';  
-$var2 = 'Hello world2';  
-$var3 = 'Hello world3';  
-return render('hello.html',$var,$var2,$var3,$_SESSION['captcha']); 
+
 
 4. Template handle  
 In **hello.html**, add a line &lt;?php echo $arg[1]; ?&gt;  
