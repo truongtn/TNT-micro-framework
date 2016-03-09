@@ -71,7 +71,7 @@ $var = 'Hello world';
 return render('hello.html',$var);  
 }  
 The user privilege in $_SESSION['role'] variable, if $_SESSION['role'] &gt;= require_access  
-user have right to access this controller  
+user have right to access this controller, use set_role($level_number) for set the new role value  
   
 6. Captcha  
 function helloController(){  
