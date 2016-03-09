@@ -43,7 +43,7 @@ $db-&gt;update("mytable", $update, "FName = :fname AND LName = :lname", $bind);
 3. CSRF protection  
 Use function csrf() before controller  
 function helloController(){  
-include_once '/lib/csrf-magic/csrf-magic.php';  
+csrf();  
 
 
 4. Template handle  
