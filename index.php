@@ -17,7 +17,7 @@ if(isset($_GET['page'])){
         render('404.html');
     }   
 }else{
-    render('index.html');
+    eval("indexController();");
 }
 
     
