@@ -14,3 +14,5 @@ define('SMTP_AUTH', true);
 define('MUSER', '');
 define('MPASS', '');
 define('MSEC', 'tls');
+//Misc
+define('VERSION', '0.1.1');
