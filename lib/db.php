@@ -1,3 +1,4 @@
+//php-pdo-wrapper-class
 <?php
 class db extends PDO {
 	private $error;
